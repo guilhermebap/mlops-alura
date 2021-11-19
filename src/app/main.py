@@ -11,6 +11,7 @@ with open('../../models/modelo_preco', 'rb') as f:
 colunas = ['tamanho', 'ano', 'garagem']
 
 app = Flask(__name__)
+
 app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
 app.config['BASIC_AUTH_PASSWORD'] = os.environ.get('BASIC_AUTH_PASSWORD')
 
